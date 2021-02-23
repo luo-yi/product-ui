@@ -12,22 +12,23 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "product"
-    label: "Blog"
-    folder: "src/pages/product"
+  - name: "ProductPage"
+    label: "Product Page"
+    folder: "src/pages/product_page"
     create: true
     slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "string"}
-      - {label: "Activities", name: "activities", widget: "list"}
+      - {label: "Hero Image", name: "heroImage", widget: "image"}
       - {label: Summary, name: summary, widget: object, fields: [
           {label: Duration, name: duration, widget: string}, 
           {label: Location, name: location, widget: string},
-          {label: Group Size, name: group_size, widget: string}, 
-          {label: Annual Leave, name: annual_leave, widget: string}, 
+          {label: Group Size, name: groupSize, widget: string}, 
+          {label: Annual Leave, name: annualLeave, widget: string}, 
           {label: Accomodation, name: accomodation, widget: string},
-          {label: Meeting Point, name: meeting_point, widget: string},
-          {label: Fitness Level, name: fitness_level, widget: string},
+          {label: Meeting Point, name: meetingPoint, widget: string},
+          {label: Fitness Level, name: fitnessLevel, widget: string},
         ]}
+      - {label: "Activities", name: "activities", widget: "list"}
