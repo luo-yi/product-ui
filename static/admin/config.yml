@@ -14,11 +14,11 @@ public_folder: /img
 collections:
   - name: "ProductPage"
     label: "Product Page"
-    folder: "src/pages/product_page"
+    folder: "src/pages/product-page"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product_page"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "string"}
       - {label: "Hero Image", name: "heroImage", widget: "image"}
@@ -32,4 +32,3 @@ collections:
           {label: Fitness Level, name: fitnessLevel, widget: string},
         ]}
       - {label: "Activities", name: "activities", widget: "list"}
-      - {label: "Tags", name: "tags", widget: "list"}
