@@ -79,10 +79,7 @@ const ProductPage = ({ data }) => {
   return (
     <LayoutWrapper>
       <ProductPageTemplate {...frontmatter} />
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+      <Box pt={100} />
     </LayoutWrapper>
   )
 }

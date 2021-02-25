@@ -15,6 +15,9 @@ import tree from './images/tree.png';
 
 
 const useStyles = makeStyles({
+  footer: {
+    height: 400
+  },
   heading: {
     fontWeight: 'bold',
     textTransform: 'uppercase',
@@ -60,9 +63,10 @@ const styles = {
     height: '20vw',
   },
   footer: {
-    height: '240px',
+    // height: '240px',
     background: '#010103',
     color: white,
+    paddingBottom: 96,
   },
   tree: {
     height: 48,
@@ -82,10 +86,10 @@ function ProductFooter(props) {
   );
 
   const statementBlocks = [
-    { icon: icon, heading: 'test', body: 'text', link: 'text' },
-    { icon: icon, heading: 'test', body: 'text', link: 'text' },
-    { icon: icon, heading: 'test', body: 'text', link: 'text' },
-    { icon: icon, heading: 'test', body: 'text', link: 'text' },
+    { icon: icon, heading: 'Lorem ipsum dolor', body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac blandit arcu, ac suscipit sapien. Aliquam ut tellus augue. Vivamus porttitor tincidunt ipsum, id egestas purus consequat vel. Aenean porttitor fermentum tristique.', link: 'Lorem ipsum dolor sit amet.' },
+    { icon: icon, heading: 'Lorem ipsum dolor', body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac blandit arcu, ac suscipit sapien. Aliquam ut tellus augue. Vivamus porttitor tincidunt ipsum, id egestas purus consequat vel. Aenean porttitor fermentum tristique.', link: 'Lorem ipsum dolor sit amet.' },
+    { icon: icon, heading: 'Lorem ipsum dolor', body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac blandit arcu, ac suscipit sapien. Aliquam ut tellus augue. Vivamus porttitor tincidunt ipsum, id egestas purus consequat vel. Aenean porttitor fermentum tristique.', link: 'Lorem ipsum dolor sit amet.' },
+    { icon: icon, heading: 'Lorem ipsum dolor', body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac blandit arcu, ac suscipit sapien. Aliquam ut tellus augue. Vivamus porttitor tincidunt ipsum, id egestas purus consequat vel. Aenean porttitor fermentum tristique.', link: 'Lorem ipsum dolor sit amet.' },
   ];
 
   const renderStatementBlock = (item, index) => (
@@ -102,7 +106,7 @@ function ProductFooter(props) {
         className={classes.image}
       />
 
-      <Box mt={-2} className={classes.footer}>
+      <Box mt={-2}className={classes.footer}>
         <Box className={classes.maxWidth}>
         <Grid container spacing={3}>
           {statementBlocks.map((item, index) => renderStatementBlock(item, index))}
