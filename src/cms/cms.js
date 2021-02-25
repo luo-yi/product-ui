@@ -7,4 +7,4 @@ import ProductPagePreview from './preview-templates/ProductPagePreview'
 CMS.registerMediaLibrary(uploadcare)
 CMS.registerMediaLibrary(cloudinary)
 
-CMS.registerPreviewTemplate('products', ProductPagePreview)
+CMS.registerPreviewTemplate('product-page', ProductPagePreview)
